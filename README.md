@@ -1,6 +1,4 @@
-# reporterassay
-
-Reporter Assay Statistical Analysis:
+# Reporter Assay Statistical Analysis:
 
 This project is conducted as an extension of our prior findings regarding protein-protein interactions involving the protein of interest with proteins 1/2/3. The aim is to investigate whether proteins 1/2/3 exert any significant influence on the activity of the protein of interest. To address this, we opted for a reporter assay to discern whether the absence of any of these proteins has a notable impact on the activity of the protein of interest.
 
