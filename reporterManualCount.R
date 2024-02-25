@@ -22,15 +22,15 @@ dataA$Group <- as.factor(dataA$Group)
 dataB$Experiment <- as.factor(dataB$Experiment)
 dataB$Group <- as.factor(dataB$Group)
 
-#two-way anova. repeated measure not performed considering the independent nature of experiments.
-anovaA <- aov(Percentage ~ Group + Experiment, data = dataA)
+#one-way anova. repeated measure not performed considering the independent nature of experiments.
+anovaA <- aov(Percentage ~ Group, data = dataA)
 summary(anovaA)
 
-anovaB <- aov(Percentage ~ Group + Experiment, data = dataB)
+anovaB <- aov(Percentage ~ Group, data = dataB)
 summary(anovaB)
 
 
-#welch t-test as post hoc for unequal variance with bonferroni correction
+#welch t-test for samples with unequal variances
 tTestA <- t.test(Percentage ~ Group, data = dataA, adjust ="bonferroni")
 print(tTestA)
 tTestB <- t.test(Percentage ~ Group, data = dataB, adjust ="bonferroni")
